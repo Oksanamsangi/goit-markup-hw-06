@@ -1,10 +1,20 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+}
+п
 .header-logo {
     font-family: "Raleway", sans-serif;
         font-weight: 700;
         font-size: 18px;
-        line-height: 1.16667;
+        line-height: 1.7;
         letter-spacing: 0.03em;
-        color: #2e2f42;
+        text-transform: uppercase;
+        color: #4d5ae5;
+}
+.header-sub-logo {
+    color: #2e2f42;
 }
 
 .header-logo:hover {
@@ -32,6 +42,10 @@
     color: #404BBF;
 }
 
+.adress {
+    font-style: normal;
+}
+
 .header-contacts {
     font-family: "Roboto", sans-serif;
         font-weight: 400;
@@ -49,12 +63,15 @@
     color: #404BBF;
 }
 
+.first-section{
+background-color: #2e2f42;
+}
 
 .main-header {
     font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-size: 56px;
-        line-height: 1.07143;
+        line-height: 1.07;
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
@@ -72,6 +89,7 @@
         width: 169px;
         height: 56px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        cursor: pointer;
         background: #4D5AE5;
     }
 
@@ -79,8 +97,16 @@
     background-color: #404BBF;
     }
 
+    .main-button:focus {
+        background-color: #404BBF;
+    }
 
-.feature-subtitle{
+    .second-section{
+        background-color: #F4F4FD;
+    }
+
+  
+   .feature-subtitle{
     font-family: "Roboto",
             sans-serif;
         font-weight: 500;
@@ -88,8 +114,10 @@
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        text-transform: capitalize;
+        background-color: #FFFFFF;
 }
-.feature-title{
+    .feature-title{
     font-family: "Roboto",
         sans-serif;
        font-weight: 400;
