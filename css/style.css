@@ -163,3 +163,14 @@ font-family: "Roboto", sans-serif;
         color: #434455;
 }
 
+.portfolio {
+    background-color: #F4F4FD
+}
+
+.portfolio-title {
+text-transform: capitalize
+}
+
+.portfolio-list {
+    background-color: #FFFFFF
+}
