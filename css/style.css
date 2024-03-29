@@ -11,7 +11,7 @@ body{
     display: flex;
 }
 
-.images {
+img {
     display: block;
 }
 
@@ -275,6 +275,7 @@ font-family: "Roboto", sans-serif;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    
 
 }
 
