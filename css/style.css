@@ -24,9 +24,6 @@ img {
     margin:0 auto;
 }
 
-.header-container {
-    display:flex;
-}
 
 .header-nav {
 display: flex; 
