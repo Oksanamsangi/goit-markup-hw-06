@@ -8,15 +8,18 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    display: flex;
 }
 
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .header-nav {
-    
+display: flex; 
+align-items: center;
 }
 
 .header-logo {
@@ -27,6 +30,7 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
    
 }
 .header-sub-logo {
@@ -48,6 +52,9 @@ body{
 }
 .header-menu{
 list-style: none;
+display: flex;
+gap: 40px;
+
 
 }
 
@@ -58,6 +65,9 @@ list-style: none;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        padding: 24px 0;
+        
+        
         
 }
 
@@ -71,6 +81,9 @@ list-style: none;
 
 .header-adress {
     list-style: none;
+    display: flex;
+    gap: 40px;
+    
 }
 
 .adress {
@@ -127,7 +140,7 @@ padding: 188px 0;
         height: 56px;
         border: none;
         border-radius: 4px;
-        
+
     }
 
     .main-button:hover {
@@ -144,6 +157,14 @@ padding: 188px 0;
         padding-bottom: 120px;
     }
 
+    .feature-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .feature-item {
+        flex-basis: calc((100% - 72px) / 4);
+    }
   
    .feature-subtitle{
     font-family: "Roboto",
@@ -155,6 +176,7 @@ padding: 188px 0;
         color: #2e2f42;
         text-transform: capitalize;
         background-color: #FFFFFF;
+        margin-bottom: 8px;
 }
     .feature-title{
     font-family: "Roboto",
@@ -168,6 +190,7 @@ padding: 188px 0;
 
 .team {
     background-color: #F4F4FD
+    padding: 120px 0;
 }
 
 .team-title{
@@ -179,10 +202,22 @@ padding: 188px 0;
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize;
+        margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-item {
     background-color: #FFFFFF
+    flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px; 
+}
+
+.employee-position {
+    padding: 32px 0;
 }
 
 .team-name {
@@ -193,6 +228,8 @@ font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-position {
@@ -203,10 +240,13 @@ font-family: "Roboto", sans-serif;
         letter-spacing: 0.02em;
         text-align: center;
         color: #434455;
+        text-align: center;
 }
 
 .portfolio {
-    background-color: #F4F4FD
+    background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -219,10 +259,26 @@ font-family: "Roboto", sans-serif;
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+
+}
+
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.app-name {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-subtitle {
@@ -231,6 +287,7 @@ font-family: "Roboto", sans-serif;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px
 }
 
 .portfolio-feature-title {
@@ -243,6 +300,7 @@ font-family: "Roboto", sans-serif;
 
 .footer {
     background-color:#2e2f42;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -253,6 +311,8 @@ font-family: "Roboto", sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-sub-logo {
