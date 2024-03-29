@@ -11,6 +11,10 @@ body{
     display: flex;
 }
 
+.images {
+    display: block;
+}
+
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
