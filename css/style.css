@@ -15,9 +15,6 @@ img {
     display: block;
 }
 
-.header-container {
-    display:flex;
-}
 
 .header {
     padding-top: 24px;
