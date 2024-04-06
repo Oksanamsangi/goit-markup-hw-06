@@ -124,7 +124,6 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     list-style: none;
-        
 }
 
 .header-contacts:hover {
@@ -138,6 +137,14 @@ img {
 .first-section {
     background-color: #2e2f42;
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.4),
+        rgba(46, 47, 66, 0.7)
+    ),
+        url(../images/hero\ image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main-header {
@@ -204,9 +211,25 @@ img {
     list-style: none;
 }
 
+.feature-link {
+    content: '';
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #f4f4fd;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
 .feature-item {
     width: calc((100% - 72px) / 4);
 }
+
   
 .feature-subtitle {
     font-family: "Roboto",sans-serif;
@@ -228,6 +251,8 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+
 
 .team {
     background-color: #F4F4FD;
@@ -287,6 +312,30 @@ img {
     text-align: center;
     color: #434455;
        text-align: center;
+}
+
+.employee-icon-list{
+    display:flex;
+    gap: 24px;
+}
+
+.employee-icon-item{
+    width: 40px;
+    height: 40px;
+}
+
+.employee-icon-link{
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display:flex;
+}
+
+.employee-icon-social{
+    width: 16px;
+    height: 14px;
+   
 }
 
 .portfolio {
@@ -377,4 +426,13 @@ img {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+}
+
+.footer-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
 }
