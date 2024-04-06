@@ -467,7 +467,7 @@ img {
     transform: translateY(100%);
 }
 
-.portfolio-hover-text:hover{
+.portfolio-item:hover .portfolio-hover-text{
     transform: translateY(0%); 
 }
 
