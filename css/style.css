@@ -468,10 +468,6 @@ img {
     transform: translateY(100%);
 }
 
-.portfolio-hover-text:hover {
-    transform: translateY(0%);
-}
-
 .footer {
     background-color:#2e2f42;
     padding: 100px 0;
