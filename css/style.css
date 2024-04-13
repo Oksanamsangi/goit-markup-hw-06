@@ -69,6 +69,8 @@ img {
 
 .modal {
 min-height: 584px;
+top: 50;
+left: 50%;
 border-radius: 4px;
 width: 408px;
 height: 584px;
@@ -78,8 +80,6 @@ box-shadow:
 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 background: #fcfcfc;
 position: absolute;
-top: 50;
-left:50%;
 transform: translate(-50% -50%);
 padding: 72px 24px 24px 24px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -113,6 +113,10 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #404bbf;
     border: none;
     fill: #ffffff
+}
+
+.modal-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -171,12 +175,21 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 8px;
 }
 
+.modal-field-fth {
+    margin-bottom: 16px;
+}
+
 .modal-field-check {
     margin-bottom: 24px;
 }
 
 .input-wrap {
     position: relative;
+    
+}
+
+.input-wrap:focus{
+    fill: #4D5AE5;
 }
 
 .modal-form-icon {
@@ -280,6 +293,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor:pointer;
     background-color: #4D5AE5
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #4D5AE5
 }
 
 .header-nav {
