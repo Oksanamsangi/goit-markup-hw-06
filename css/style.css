@@ -862,7 +862,7 @@ img {
 .modal-check:checked + .check-text> .check-text-span {
     background-color: #404bbf;
     border: none;
-    fill: ##F4F4FD;
+    fill: #F4F4FD;
 }
 
 .send-modal-button {
