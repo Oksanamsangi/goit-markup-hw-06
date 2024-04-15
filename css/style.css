@@ -797,7 +797,7 @@ img {
     fill: #4d5ae5;
 }
 
-.modal-form-icon:focus {
+.modal-input:focus + .modal-form-icon {
     fill: #4d5ae5;
 }
 
