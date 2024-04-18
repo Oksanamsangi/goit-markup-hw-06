@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    width: 1158px;
+    width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -228,6 +228,7 @@ img {
     gap: 24px;
     justify-content: center;
     align-items: center;
+    
 }
 
  .visually-hidden {
@@ -245,14 +246,19 @@ img {
 
 .feature-list {
     display: flex;
-    gap: 24px;
-    padding-left: 0;
+    /* gap: 24px; */
+    gap: 72px;
+    /* padding-left: 0; */
+    padding-right: 16px;
+    padding-left: 16px;
     margin: 0;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .feature-item {
-    width: calc((100% - 72px) / 4);
+   /* width: calc((100% - 72px) / 4); */
+   width: 100%;
 }
 
   
@@ -308,10 +314,12 @@ img {
 
 .team-list {
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
+    gap: 72px;
     padding-left: 0;
     margin: 0;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .team-item {
@@ -319,7 +327,7 @@ img {
     width: 264px;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px; 
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
     box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -420,10 +428,11 @@ img {
     padding-left: 0;
     margin: 0;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .portfolio-item {
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -880,4 +889,36 @@ img {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     min-width: 169px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width:768px){
+   .container {
+    width: 768px;
+    padding-right: 16px;
+    padding-left: 16px;
+   } 
+
+   .feature-list {
+    gap: 24px 88px;
+   }
+
+   .feature-item {
+    width: calc((100% - 88px) / 2);
+   }
+}
+
+@media screen and (min-width:1158px) {
+    .container {
+        width: 1166px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .feature-list {
+        gap: 88px;
+    }
+
+    .feature-item {
+        width: calc((100% - 72px) / 4);
+    }
 }
