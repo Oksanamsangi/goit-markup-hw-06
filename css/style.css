@@ -767,7 +767,7 @@ img {
 }
 
 .modal {
-  position: absolute;
+  /* position: absolute;
   transform: translate(-50%, -50%);
   width: 288px;
   min-height: 623px;
@@ -779,25 +779,39 @@ img {
   padding: 72px 24px 24px 24px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+
+  width: 288px;
+    min-height: 623px;
+    padding-top: 72px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #fcfcfc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 
 .modal-btn {
-  padding: 0;
-  right: 24px;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #e7e9fc;
-  top: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
+  display: block;
+    min-width: 169px;
+    margin: 0 auto;
+    height: 56px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 
 .modal-btn:hover {
@@ -817,15 +831,13 @@ img {
 }
 
 .modal-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  min-width: 360px;
-  margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
 }
 
 .modal-input {
@@ -905,21 +917,28 @@ img {
 }
 
 .modal-text {
-  width: 100%;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  width: 360px;
-  height: 120px;
-  resize: none;
-  padding: 8px 16px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
-  background-color: transparent;
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    border-radius: 4px;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    padding: 4px 24px 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: transparent;
+    outline: transparent;
+    padding-left: 32px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 8px 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    resize: none;
 
 .modal-text:hover {
   border: 1px solid #4d5ae5;
