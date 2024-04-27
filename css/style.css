@@ -1201,6 +1201,7 @@ img {
   .footer-container {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
   }
 
   .logo-wrapper-footer {
@@ -1211,7 +1212,5 @@ img {
   .soc-med {
   }
 
-  .email-subscribe {
-    margin-left: auto;
-  }
+  
 }
