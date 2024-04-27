@@ -592,7 +592,13 @@ img {
   color: #4d5ae5;
   margin-bottom: 16px;
   display: block;
-  text-align: center;
+  
+}
+
+@media screen and (max-width: 767px) {
+  .footer-logo {
+    text-align: center;
+  }
 }
 
 .email-subscribe {
@@ -642,7 +648,14 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-  text-align: center;
+  
+}
+
+
+@media screen and (max-width: 766px) {
+  .social-media-footer {
+    text-align: center;
+  }
 }
 
 .social-media-list {
@@ -688,7 +701,12 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-  text-align: center;
+}
+
+@media screen and (max-width: 766px) {
+  .subscribe-footer-prf {
+    text-align: center;
+  }
 }
 
 .footer-input-subscribe {
@@ -1096,6 +1114,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 108px;
+    gap:72px 24px;
   }
 
   .footer-form {
@@ -1207,9 +1226,11 @@ img {
   .logo-wrapper-footer {
     quotes: 264px;
     height: 112px;
+    margin-right: 120px;
   }
 
   .soc-med {
+    margin-right: 80px;
   }
 
   
