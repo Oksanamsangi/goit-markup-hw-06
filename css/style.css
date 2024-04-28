@@ -1210,6 +1210,11 @@ img {
     height: 112px;
   }
 
+  .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .team-list {
     display: flex;
     gap: 24px;
